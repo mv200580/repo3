@@ -29,6 +29,17 @@
     "oidcProviders": [
       {
         "url": "http://localhost",
+        "providerName": "oid-test2",
+        "clientName": "",
+        "clientId": "test2",
+        "clientSecret": "test2pass",
+        "redirectUri": "https://10.17.10.43/auth/v3/oidc/callback",
+        "groups": [
+          "default_admins_group"
+        ]
+      },
+      {
+        "url": "http://localhost",
         "providerName": "oidc_test",
         "clientName": "",
         "clientId": "test",
