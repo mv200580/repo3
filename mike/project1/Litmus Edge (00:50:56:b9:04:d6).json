@@ -1,0 +1,144 @@
+{
+  "auth": {
+    "providers": [
+      {
+        "bindDN": "",
+        "bindDNPassword": "",
+        "groupAttrGroup": "test10",
+        "groupAttrName": "test9",
+        "groupAttrUser": "test11",
+        "groupFilter": "test8",
+        "groupSearchBaseDN": "test7",
+        "groupSearchScope": "sub",
+        "host": "localhost",
+        "name": "ldap-test",
+        "port": 389,
+        "tls": false,
+        "tlsRootCA": "",
+        "type": "generic",
+        "userAttrFirstName": "test5",
+        "userAttrID": "test3",
+        "userAttrLastName": "test6",
+        "userAttrUsername": "test4",
+        "userFilter": "test2",
+        "userSearchBaseDN": "test",
+        "userSearchScope": "sub",
+        "groupsToRoles": null
+      }
+    ],
+    "oidcProviders": [
+      {
+        "url": "http://localhost",
+        "providerName": "oidc_test",
+        "clientName": "",
+        "clientId": "test",
+        "clientSecret": "testpass",
+        "redirectUri": "https://10.17.10.43/auth/v3/oidc/callback",
+        "groups": [
+          "default_viewers_group"
+        ]
+      }
+    ],
+    "groups": null,
+    "roles": null,
+    "rbac": {
+      "policies": null,
+      "groups": null
+    }
+  },
+  "dm": {
+    "ntp": [
+      "0.pool.ntp.org",
+      "1.pool.ntp.org",
+      "2.pool.ntp.org",
+      "3.pool.ntp.org"
+    ],
+    "dns": [
+      "8.8.8.8",
+      "8.8.4.4"
+    ],
+    "timezone": "UTC",
+    "country": "US",
+    "docker": {
+      "bip": "10.30.50.1/24"
+    },
+    "firewall": {
+      "rules": [
+        {
+          "id": "ed21043f-017e-46ea-83fa-b7f013854e77",
+          "protocol": "tcp",
+          "port": "8899",
+          "policy": "ACCEPT",
+          "iface": "eth0",
+          "desc": "Rules for 8899"
+        }
+      ]
+    }
+  },
+  "opcua": {
+    "users": [],
+    "hierarchy": {
+      "id": "edgedevice",
+      "parent_id": "",
+      "name": "EdgeDevice",
+      "type": "FOLDER",
+      "node_source": "manual",
+      "data": null,
+      "children": null,
+      "path": [
+        "NODE",
+        "edgedevice"
+      ],
+      "worker_node_id": "EdgeDevice",
+      "worker_node_id_mode": "fixed"
+    },
+    "modes": {
+      "Aes128_Sha256_RsaOaep-Sign": false,
+      "Aes128_Sha256_RsaOaep-SignAndEncrypt": false,
+      "Aes256_Sha256_RsaPss-Sign": false,
+      "Aes256_Sha256_RsaPss-SignAndEncrypt": false,
+      "Basic128Rsa15-Sign": false,
+      "Basic128Rsa15-SignAndEncrypt": false,
+      "Basic256-Sign": false,
+      "Basic256-SignAndEncrypt": false,
+      "Basic256Sha256-Sign": false,
+      "Basic256Sha256-SignAndEncrypt": false,
+      "None-None": false
+    },
+    "policies": {},
+    "enabled": false,
+    "certificates": [],
+    "version": {
+      "Version": "",
+      "GitCommit": ""
+    }
+  },
+  "analytics2": {
+    "Processors": [],
+    "Positions": [],
+    "Version": "2.0.14",
+    "Git": "d8bb060166",
+    "Parameters": [
+      {
+        "UniqueName": "key1",
+        "DataType": "STRING",
+        "IsReadWrite": true,
+        "IsPersistent": true,
+        "DBValue": "value1"
+      }
+    ]
+  },
+  "stats": {
+    "timeseries_db": {
+      "source": "internal",
+      "enabled": true
+    },
+    "version": {
+      "Git": "33a036cdbf",
+      "Version": "2.2.2"
+    }
+  },
+  "sysinfo": {
+    "labels": []
+  }
+}
